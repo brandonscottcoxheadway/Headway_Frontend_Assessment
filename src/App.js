@@ -1,6 +1,10 @@
 import "./styles.css";
+import React, { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 export default function App() {
+  const [value, setValue] = useState("");
+
   return (
     <>
       <div className="Border">
@@ -27,9 +31,11 @@ export default function App() {
               <tr>
                 <td>
                   <a href="<%= shortUrl.full %>">https://www.google.com</a>
+                  <button>Copy</button>
                 </td>
                 <td>
                   <a href="<%= shortUrl.short %>">https://www.google.com</a>
+                  <button>Copy</button>
                 </td>
               </tr>
             </tbody>
