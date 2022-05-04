@@ -13,8 +13,27 @@ export default function App() {
               name="fname"
               placeholder="Make your links shorter"
             />
-            <input type="submit" value="Shorten" />
+            <button type="submit">Shorten</button>
           </form>
+
+          <table class="table table-striped table-responsive">
+            <thead>
+              <tr>
+                <th>Full URL</th>
+                <th>Short URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="<%= shortUrl.full %>">https://www.google.com</a>
+                </td>
+                <td>
+                  <a href="<%= shortUrl.short %>">https://www.google.com</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </>

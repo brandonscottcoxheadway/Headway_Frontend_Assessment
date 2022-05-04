@@ -1,16 +1,18 @@
+.Border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: azure;
+}
+
 .Background {
   background-color: rgba(0, 118, 252, 0.466);
   text-align: center;
   font-family: sans-serif;
   padding: 10px;
   box-shadow: -1px 3px 10px rgb(0, 0, 0);
-}
-
-.Border {
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  background-color: azure;
+  border-radius: 2%;
 }
 
 h1 {
@@ -20,5 +22,9 @@ h1 {
 }
 
 button {
-  border-radius: 100%;
+  border-radius: 10%;
+  margin-left: 10px;
+  background-color: rgba(0, 44, 95, 0.733);
+  color: white;
+  height: 33px;
 }
